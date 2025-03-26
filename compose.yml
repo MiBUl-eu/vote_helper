@@ -1,0 +1,17 @@
+services:
+  madb:
+    container_name: madb
+    image: mariadb:10.5
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: kgr
+      MYSQL_USER: kgr
+      MYSQL_PASSWORD: kgr
+    volumes:
+      - kgrdata:/var/lib/mysql
+
+
+volumes:
+  kgrdata: {}

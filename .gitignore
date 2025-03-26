@@ -1,0 +1,6 @@
+.venv
+.cache
+.version
+.aider*
+.env
+__pycache__
